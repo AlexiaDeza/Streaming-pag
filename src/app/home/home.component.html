@@ -1,10 +1,3 @@
-<h4 class="mt-4">Home Page</h4>
-
-<p *ngIf="user">Logged in as:{{user?.email}}-{{user?.displayname}}</p>
-
-<button class="btn btn-primary mr-2" *ngIf="!user"(click)="register()">Register</button>
-<button class="btn btn-primary" *ngIf="user"(click)="logout()">Logout</button>
-<button class="btn btn-primary" *ngIf="!user"(click)="login()">Login</button>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -17,20 +10,28 @@
         <link rel="stylesheet" type="text/css" href="home.component.css" media="screen"/>
     </head>
     <body>
-        <body background="fondo2.jpg">
         <header>
             <font size=7, color="white", face="Berlin Sans FB">
                 <h1 align="center">Streaming Poli</h1>
-            <div class="divboton" class="btn btn-primary" *ngIf="!user"(click)="login()"><a class="boton" href="login.component.html">Iniciar sesión</a></div>
+                <div class="divboton" class="btn btn-primary" *ngIf="!user" (click)="login()"><a class="boton" href="login.component.html">Iniciar sesión</a></div>
+            </font>
         </header>
         <nav>
 
         </nav>
         <section>
+            <h4 class="mt-4">Home Page</h4>
+
+            <p *ngIf="user">Logged in as:{{user?.email}}-{{user?.displayName}}</p>
+
+            <button class="btn btn-primary mr-2" *ngIf="!user"(click)="register()">Register</button>
+            <button class="btn btn-primary" *ngIf="user"(click)="logout()">Logout</button>
+            <button class="btn btn-primary" *ngIf="!user"(click)="login()">Login</button>
 
         </section>
         <font size=3, color="white", face="Berlin Sans FB">
-        <footer align="center">Pagina hecha por Barrigon Pablo, Alberdi Matias y Deza Alexia</footer>
+            <footer align="center">Pagina hecha por Barrigon Pablo, Alberdi Matias y Deza Alexia</footer>
+        </font>
     </body>
 </html>
     
