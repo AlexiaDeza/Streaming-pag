@@ -1,5 +1,31 @@
+<app-navbar></app-navbar>
 <div class="container">
-  <h3>Streaming</h3>
+    <h3>Streaming</h3>
 </div>
-
+<div class="row">
+    <div class="col-md-5">
+        <app-empleado></app-empleado>
+    </div>
+    <div class="col-md-7">
+        <app-lista-empleados></app-lista-empleados>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <app-usuario></app-usuario>
+    </div>
+    <div class="col-md-7">
+        <app-lista-usuarios></app-lista-usuarios>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <app-libro></app-libro>
+    </div>
+    <div class="col-md-7">
+        <app-lista-libros></app-lista-libros>
+    </div>
+</div>
+<app-lista-libros></app-lista-libros>
+<audio src="http://192.168.0.21:8000/stream" autoplay="false" controls="true"></audio>
 <router-outlet></router-outlet>
