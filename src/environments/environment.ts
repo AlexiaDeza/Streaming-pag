@@ -3,8 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-  //TODO: poner acá la config de firebase
+  production: false,
+  firebaseConfig:{
+    apiKey: "AIzaSyCqFVYAt-Sz0tpLsustQJkyx0slOrvTN04",
+    authDomain: "booketeer-ale-walter.firebaseapp.com",
+    databaseURL: "https://booketeer-ale-walter.firebaseio.com",
+    projectId: "booketeer-ale-walter",
+    storageBucket: "booketeer-ale-walter.appspot.com",
+    messagingSenderId: "225766270488",
+    appId: "1:225766270488:web:1363776140e6432d42456d",
+    measurementId: "G-EGE8YPMG0J"
+  }
 };
 
 /*
